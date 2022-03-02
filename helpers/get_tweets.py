@@ -1,6 +1,6 @@
-import config
-import tweepy, json, time, ssl
-from get_user_id import author_id, client
+#from helpers.config import config
+import tweepy, time, ssl
+from helpers.get_user_id import author_id, client
 
 from rich.console import Console
 console = Console()
@@ -37,4 +37,7 @@ for i in range(500):
 
 #console.print(tweet_list, style = "bold yellow")
 console.print(f"Total Tweets Includes Media : {len(tweet_list)}", style= "Bold Red")
+
+
+
 

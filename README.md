@@ -16,6 +16,6 @@ pip3 install -r requirements.txt
 ```
 ## Run :
 ```
-python3 download.py
+python3 run.py
 ```
  _ _ _

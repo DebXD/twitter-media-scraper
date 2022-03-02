@@ -1,5 +1,7 @@
-import config
-import tweepy, json
+import helpers.config
+import tweepy
+
+config = helpers.config
 
 #AUTH
 ##CLIENT
@@ -11,7 +13,7 @@ client = get_client()
 
 ##API
 def get_api():
-    auth = tweepy.OAuth2BearerHandler(bearer_token = config.BEARER_TOKEN)
+    auth = tweepy.OAuth2BearerHandler(bearer_token =config.BEARER_TOKEN)
     api = tweepy.API(auth=auth)
     return api
     
@@ -24,6 +26,11 @@ def get_user_timeline():
     return user_data.data.id
 
 author_id = get_user_timeline()
+
+
+
+
+
 
 
 

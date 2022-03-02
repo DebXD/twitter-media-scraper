@@ -1,5 +1,5 @@
-from get_media import media_list, console, media_type
-from get_user_id import username
+from helpers.get_media import media_list, console, media_type
+from helpers.get_user_id import username
 import requests, random, requests, time, os
 
 

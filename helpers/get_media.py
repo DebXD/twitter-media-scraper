@@ -1,7 +1,7 @@
-from get_tweets import tweet_list, client, author_id
+from helpers.get_tweets import tweet_list, client, author_id
 from rich.console import Console
-from get_user_id import api 
-import config, tweepy, time
+from helpers.get_user_id import api 
+import tweepy, time
 
 console = Console()
 
