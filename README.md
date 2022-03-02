@@ -7,7 +7,7 @@ Get all the media contents from a spefic twitter account
  
 2. Make a project with read and write access.
  
-2. Get your Credentials and paste it on the `config.env`.
+2. Get your Credentials and paste it on the `config.py`.
  
 
 ## Install Requirements :
