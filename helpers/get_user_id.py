@@ -1,12 +1,11 @@
-import helpers.config
+import config
 import tweepy
 
-config = helpers.config
 
 #AUTH
 ##CLIENT
 def get_client():
-    client = tweepy.Client(bearer_token=config.BEARER_TOKEN, consumer_key=config.API_KEY, consumer_secret=config.API_SECRET, access_token=config.ACCESS_TOKEN,access_token_secret=config.ACCESS_TOKEN_SECRET,wait_on_rate_limit=False)
+    client = tweepy.Client(bearer_token=config.BEARER_TOKEN, consumer_key=config.API_KEY, consumer_secret=config.API_SECRET, access_token=config.ACCESS_TOKEN,access_token_secret=config.ACCESS_TOKEN_SECRET,wait_on_rate_limit=True)
     return client
     
 client = get_client()
@@ -26,6 +25,7 @@ def get_user_timeline():
     return user_data.data.id
 
 author_id = get_user_timeline()
+
 
 
 

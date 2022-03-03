@@ -1,7 +1,7 @@
 # twitter-media-scrappper
 Get all the media contents from a spefic twitter account
 
-## Pre-requisite : 
+## Pre-requisites : 
 
 1. Sign up as [Twitter Developer account]( https://developer.twitter.com/en).
  

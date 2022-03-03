@@ -1,7 +1,7 @@
-from helpers.get_tweets import tweet_list, client, author_id
+from helpers.get_tweets import tweet_list
 from rich.console import Console
 from helpers.get_user_id import api 
-import tweepy, time
+import time
 
 console = Console()
 
@@ -19,15 +19,13 @@ def get_tweet_media():
 
         try:
             media_url = status._json.get("entities").get("media")[0].get("media_url_https")
-            #media_url = status._json.get("entities").get("media")[0].get("media_url")
             
             
             if len(media_url) < 80 :
                 
                 media_type = status._json.get("entities").get("media")[0].get("type")
                 
-                #console.print(media_type, style ="bold red")
-                #console.print(media_url, style ="bold red")
+                
                 media_list.append(media_url)
 
 
@@ -36,8 +34,6 @@ def get_tweet_media():
                 vid_type = status._json.get("extended_entities").get("media")[0].get("video_info").get("variants")[0].get("content_type")
             
                 vid_url = status._json.get("extended_entities").get("media")[0].get("video_info").get("variants")[0].get("url")
-                #console.print(vid_type,style="bold green")
-                #console.print(vid_url,style="bold green"
                 media_list.append(vid_url)
 
             else:
