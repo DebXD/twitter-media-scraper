@@ -18,4 +18,6 @@ pip3 install -r requirements.txt
 ```
 python3 run.py
 ```
+
+*There is limit of 900 API requests per 15 Minutes on base Twitter Developer Account.
  _ _ _
